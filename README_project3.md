@@ -20,3 +20,14 @@ Knowledge Graph  — queryable, traversable, visualizable
 
 NER on its own gives you a list of names. That's not knowledge — it's a word
 list. The interesting problem is the second half: recovering how those
+entities *relate* to each other, and assembling those relations into a
+structure you can actually query. This project builds both halves and joins
+them.
+
+## Part 1 — Named Entity Recognition
+
+**Task:** token classification on CoNLL-2003 (the standard NER benchmark) —
+`PER`, `ORG`, `LOC`, `MISC` in BIO tagging format.
+
+**Model:** `distilbert-base-cased` with a token-classification head, fine-tuned
+for 3 epochs.
