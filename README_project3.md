@@ -9,3 +9,14 @@ visualize.
 ```
 Raw text
    ↓  [DistilBERT token classification, fine-tuned on CoNLL-2003]
+Entities  (PER / ORG / LOC / MISC)
+   ↓  [spaCy dependency-parse SVO extraction]
+Triples   (subject, relation, object)
+   ↓  [NetworkX graph construction]
+Knowledge Graph  — queryable, traversable, visualizable
+```
+
+## Motivation
+
+NER on its own gives you a list of names. That's not knowledge — it's a word
+list. The interesting problem is the second half: recovering how those
