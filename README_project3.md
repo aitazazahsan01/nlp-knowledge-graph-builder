@@ -75,3 +75,14 @@ subject and object map onto entities the NER model found**. That filter is
 what keeps the graph clean.
 
 **Rule-based, deliberately:** trained relation extractors need labeled relation
+data, which is rare and expensive. Dependency rules produce a working graph
+immediately and are fully interpretable — you can always trace *why* a triple
+was extracted. The trade-off is recall: unusual phrasings get missed.
+
+## Part 3 — Knowledge Graph
+
+Triples are assembled into a NetworkX `MultiDiGraph` — directed, typed nodes,
+labeled edges. Once it's a graph, graph algorithms come for free:
+
+| Query | Method |
+|---|---|
