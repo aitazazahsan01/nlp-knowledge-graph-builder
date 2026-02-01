@@ -64,3 +64,14 @@ Approach: dependency-parse-based Subject-Verb-Object extraction via spaCy.
 
 ```
         founded  (ROOT, verb → the relation)
+        /      \
+   nsubj        dobj
+   Musk         SpaceX
+```
+
+The extractor walks each verb's children for `nsubj` / `dobj` / `pobj`,
+expands each to its full noun phrase, and keeps the triple **only if both
+subject and object map onto entities the NER model found**. That filter is
+what keeps the graph clean.
+
+**Rule-based, deliberately:** trained relation extractors need labeled relation
