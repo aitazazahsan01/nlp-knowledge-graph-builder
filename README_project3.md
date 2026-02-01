@@ -53,3 +53,14 @@ destroys one of the strongest signals available for entity recognition.
 
 **Why seqeval instead of accuracy:** roughly 85% of tokens are `O`. A model
 that predicts `O` for everything scores ~85% token accuracy while being
+useless. `seqeval` measures entity-level precision/recall/F1 — a prediction
+only counts if the **full span and the type** both match.
+
+## Part 2 — Relation Extraction
+
+NER gives graph **nodes**. Edges require relation extraction.
+
+Approach: dependency-parse-based Subject-Verb-Object extraction via spaCy.
+
+```
+        founded  (ROOT, verb → the relation)
