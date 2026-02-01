@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="directed"><node id="SpaceX">
+  <data key="d0">ORG</data>
+</node>
+<node id="California">
+  <data key="d0">LOC</data>
+</node>
+<node id="Tesla">
+  <data key="d0">ORG</data>
+</node>
+<node id="Austin">
+  <data key="d0">LOC</data>
+</node>
+<node id="Musk">
+  <data key="d0">ORG</data>
+</node>
+<node id="Twitter">
+  <data key="d0">ORG</data>
+</node>
+<node id="Sa">
+  <data key="d0">PER</data>
+</node>
+<node id="Microsoft">
+  <data key="d0">ORG</data>
+</node>
+<node id="Redmond">
+  <data key="d0">LOC</data>
+</node>
+<node id="Washington">
+  <data key="d0">LOC</data>
+</node>
+<node id="Google">
+  <data key="d0">ORG</data>
+</node>
+<node id="DeepMind">
+  <data key="d0">ORG</data>
+</node>
+<node id="London">
+  <data key="d0">LOC</data>
+</node>
+<node id="Sundar Picha">
+  <data key="d0">PER</data>
+</node>
+<node id="Alphabet">
+  <data key="d0">ORG</data>
+</node>
+<node id="Demis Hassabis">
+  <data key="d0">PER</data>
+</node>
+<node id="Jeff Bezos">
+  <data key="d0">PER</data>
+</node>
+<node id="Amazon">
+  <data key="d0">ORG</data>
+</node>
+<node id="Seattle">
+  <data key="d0">LOC</data>
+</node>
+<node id="Whole Foods">
+  <data key="d0">ORG</data>
+</node>
+<node id="Andy Jass">
+  <data key="d0">PER</data>
+</node>
+<node id="Amazon Web Services">
+  <data key="d0">ORG</data>
+</node>
+<edge source="Musk" target="Twitter">
+  <data key="d1">acquire</data>
+</edge>
+<edge source="Sa" target="Microsoft">
+  <data key="d1">be</data>
+</edge>
+<edge source="Microsoft" target="Redmond">
+  <data key="d1">headquarter in</data>
+</edge>
+<edge source="Google" target="DeepMind">
+  <data key="d1">acquire</data>
+</edge>
+<edge source="DeepMind" target="London">
+  <data key="d1">found in</data>
+</edge>
+<edge source="Sundar Picha" target="Google">
+  <data key="d1">run</data>
+</edge>
+<edge source="Jeff Bezos" target="Amazon">
+  <data key="d1">found</data>
+</edge>
+<edge source="Jeff Bezos" target="Seattle">
+  <data key="d1">found in</data>
+</edge>
+<edge source="Amazon" target="Whole Foods">
+  <data key="d1">acquire</data>
+</edge>
+<edge source="Andy Jass" target="Amazon Web Services">
+  <data key="d1">lead</data>
+</edge>
+</graph></graphml>

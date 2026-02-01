@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "Musk",
+    "subject_type": "ORG",
+    "relation": "acquire",
+    "object": "Twitter",
+    "object_type": "ORG"
+  },
+  {
+    "subject": "Sa",
+    "subject_type": "PER",
+    "relation": "be",
+    "object": "Microsoft",
+    "object_type": "ORG"
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "ORG",
+    "relation": "headquarter in",
+    "object": "Redmond",
+    "object_type": "LOC"
+  },
+  {
+    "subject": "Google",
+    "subject_type": "ORG",
+    "relation": "acquire",
+    "object": "DeepMind",
+    "object_type": "ORG"
+  },
+  {
+    "subject": "Sundar Picha",
+    "subject_type": "PER",
+    "relation": "run",
+    "object": "Google",
+    "object_type": "ORG"
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "ORG",
+    "relation": "found in",
+    "object": "London",
+    "object_type": "LOC"
+  },
+  {
+    "subject": "Jeff Bezos",
+    "subject_type": "PER",
+    "relation": "found",
+    "object": "Amazon",
+    "object_type": "ORG"
+  },
+  {
+    "subject": "Jeff Bezos",
+    "subject_type": "PER",
+    "relation": "found in",
+    "object": "Seattle",
+    "object_type": "LOC"
+  },
+  {
+    "subject": "Amazon",
+    "subject_type": "ORG",
+    "relation": "acquire",
+    "object": "Whole Foods",
+    "object_type": "ORG"
+  },
+  {
+    "subject": "Andy Jass",
+    "subject_type": "PER",
+    "relation": "lead",
+    "object": "Amazon Web Services",
+    "object_type": "ORG"
+  }
+]
