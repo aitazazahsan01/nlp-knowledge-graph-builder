@@ -31,3 +31,14 @@ them.
 
 **Model:** `distilbert-base-cased` with a token-classification head, fine-tuned
 for 3 epochs.
+
+### The core technical challenge: subword label alignment
+
+The dataset labels **words**, but the tokenizer produces **subwords**:
+
+```
+Words:     ["Elon",  "Musk",  "founded", "SpaceX"]
+Labels:    [ B-PER,   I-PER,    O,         B-ORG ]
+
+Subwords:  ["elon", "mu", "##sk", "founded", "space", "##x"]
+Aligned:   [ B-PER,  I-PER, -100,   O,        B-ORG,  -100 ]
