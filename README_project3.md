@@ -42,3 +42,14 @@ Labels:    [ B-PER,   I-PER,    O,         B-ORG ]
 
 Subwords:  ["elon", "mu", "##sk", "founded", "space", "##x"]
 Aligned:   [ B-PER,  I-PER, -100,   O,        B-ORG,  -100 ]
+```
+
+Continuation subwords are marked `-100` (PyTorch's `ignore_index`) so they
+contribute nothing to the loss. Getting this wrong silently corrupts training
+— it's the single most common bug in token classification.
+
+**Why a *cased* model:** "Apple" (company) vs "apple" (fruit). Lowercasing
+destroys one of the strongest signals available for entity recognition.
+
+**Why seqeval instead of accuracy:** roughly 85% of tokens are `O`. A model
+that predicts `O` for everything scores ~85% token accuracy while being
