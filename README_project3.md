@@ -108,3 +108,14 @@ GraphML (loadable into Neo4j or Gephi).
 | Relations extracted (sample doc) | 10 |
 
 ## Key Takeaways
+
+- The fine-tuned NER model reached **88.4% entity-level F1** on CoNLL-2003
+  test — a solid result given seqeval's strict full-span-and-type matching
+  criterion (this is a meaningfully harder bar than token accuracy).
+- Precision (87.5%) and recall (89.4%) are close together, meaning the model
+  isn't systematically over- or under-predicting entities — errors are
+  fairly balanced between missed entities and false positives.
+- From a 5-sentence sample document, the pipeline surfaced **28 entities**
+  and distilled them down to **10 clean subject-relation-object triples**
+  forming a **22-node graph**. The entity-to-relation drop-off (28 → 10) is
+  expected and reflects the deliberate precision-over-recall design of the
