@@ -86,3 +86,14 @@ labeled edges. Once it's a graph, graph algorithms come for free:
 
 | Query | Method |
 |---|---|
+| What do we know about X? | in-edges + out-edges of node X |
+| Who are the hubs? | degree centrality |
+| How is A connected to B? | shortest path |
+| All organizations mentioned | filter nodes by `entity_type` |
+
+Exports: interactive HTML (pyvis), static PNG (matplotlib), JSON triples, and
+GraphML (loadable into Neo4j or Gephi).
+
+## Results
+
+| Metric | Score |
