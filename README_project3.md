@@ -97,3 +97,14 @@ GraphML (loadable into Neo4j or Gephi).
 ## Results
 
 | Metric | Score |
+|---|---|
+| NER test precision | 87.5% |
+| NER test recall | 89.4% |
+| NER test F1 | **88.4%** |
+| Model parameters | 65,197,833 (~65.2M) |
+| Graph nodes | 22 |
+| Graph edges | 10 |
+| Entities extracted (sample doc) | 28 |
+| Relations extracted (sample doc) | 10 |
+
+## Key Takeaways
