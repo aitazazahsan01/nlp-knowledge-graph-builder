@@ -140,3 +140,14 @@ GraphML (loadable into Neo4j or Gephi).
 **BIO tag confusion matrix** — where tag predictions get mixed up:
 
 ![NER Confusion Matrix](ner_confusion_matrix.png)
+
+**Extraction distribution** — what the pipeline pulled out of the document:
+
+![Extraction Distribution](extraction_distribution.png)
+
+**The knowledge graph itself:**
+
+![Knowledge Graph](knowledge_graph.png)
+
+An interactive version is in `knowledge_graph.html` — open it in a browser to
+drag nodes and inspect relations.
