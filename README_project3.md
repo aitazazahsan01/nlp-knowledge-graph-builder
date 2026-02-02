@@ -163,3 +163,14 @@ p3_step5_knowledge_graph.py      # Graph construction, querying, visualization
 p3_step6_charts.py               # All evaluation charts
 
 knowledge_graph.html             # Interactive graph
+knowledge_graph.graphml          # Neo4j / Gephi importable
+knowledge_graph_triples.json     # Raw extracted triples
+```
+
+## How to Run
+
+Run in Google Colab with a GPU runtime, in order:
+
+1. `p3_step1_ner_data.py` — loads CoNLL-2003, builds aligned labels
+2. `p3_step2_train_ner.py` — fine-tunes the NER model (~10–15 min on GPU)
+3. `p3_step3_inference.py` — loads the trained model, tests entity extraction
