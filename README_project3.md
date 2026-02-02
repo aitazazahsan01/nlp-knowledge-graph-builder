@@ -130,3 +130,13 @@ GraphML (loadable into Neo4j or Gephi).
 ## Visualizations
 
 **NER training curves** — loss and entity-level validation metrics:
+
+![NER Training Curves](ner_training_curves.png)
+
+**Per-entity-type performance** — which entity types are hardest:
+
+![Per-Type F1](ner_per_type_f1.png)
+
+**BIO tag confusion matrix** — where tag predictions get mixed up:
+
+![NER Confusion Matrix](ner_confusion_matrix.png)
