@@ -151,3 +151,15 @@ GraphML (loadable into Neo4j or Gephi).
 
 An interactive version is in `knowledge_graph.html` — open it in a browser to
 drag nodes and inspect relations.
+
+## Project Structure
+
+```
+p3_step1_ner_data.py             # Data loading + subword label alignment
+p3_step2_train_ner.py            # Fine-tune DistilBERT, evaluate with seqeval
+p3_step3_inference.py            # Entity extraction from raw text
+p3_step4_relation_extraction.py  # Dependency-parse SVO triple extraction
+p3_step5_knowledge_graph.py      # Graph construction, querying, visualization
+p3_step6_charts.py               # All evaluation charts
+
+knowledge_graph.html             # Interactive graph
