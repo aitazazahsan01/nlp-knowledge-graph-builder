@@ -119,3 +119,14 @@ GraphML (loadable into Neo4j or Gephi).
   and distilled them down to **10 clean subject-relation-object triples**
   forming a **22-node graph**. The entity-to-relation drop-off (28 → 10) is
   expected and reflects the deliberate precision-over-recall design of the
+  rule-based extractor: only triples where both sides matched a real NER
+  entity were kept, which is what keeps the graph clean rather than noisy.
+- The gap between entities found and relations extracted is the clearest
+  signal of where a supervised relation classifier (see "What's Next")
+  would add the most value — recovering the relations that dependency
+  rules miss due to passive voice, appositives, or cross-sentence
+  coreference.
+
+## Visualizations
+
+**NER training curves** — loss and entity-level validation metrics:
