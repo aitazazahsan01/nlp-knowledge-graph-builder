@@ -184,3 +184,15 @@ session without restarting.
 To use your own text: replace `SAMPLE_DOC` in step 4 with any document.
 
 ## Tech Stack
+
+`PyTorch` · `Hugging Face Transformers` · `Hugging Face Datasets` · `spaCy` ·
+`seqeval` · `NetworkX` · `pyvis` · `matplotlib` · `seaborn`
+
+## Known Limitations
+
+- **No coreference resolution.** "Musk founded SpaceX. He also leads Tesla."
+  produces no edge from the second sentence — "He" isn't linked back to Musk.
+  Adding a coref model would meaningfully increase recall.
+- **No entity linking.** "Google" and "Alphabet" are separate nodes; there's
+  no canonicalization against a knowledge base like Wikidata.
+- **Rule-based relation recall.** Passive voice, appositives, and unusual
