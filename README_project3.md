@@ -196,3 +196,14 @@ To use your own text: replace `SAMPLE_DOC` in step 4 with any document.
 - **No entity linking.** "Google" and "Alphabet" are separate nodes; there's
   no canonicalization against a knowledge base like Wikidata.
 - **Rule-based relation recall.** Passive voice, appositives, and unusual
+  phrasings are missed.
+- **Single-sentence relations only.** Relations spanning sentence boundaries
+  aren't captured.
+
+## What's Next
+
+- Add coreference resolution to resolve pronouns before extraction
+- Entity linking / canonicalization to merge duplicate nodes
+- Train a supervised relation classifier on a labeled dataset and compare
+  precision/recall against these rules
+- Load the graph into Neo4j and query it with Cypher
