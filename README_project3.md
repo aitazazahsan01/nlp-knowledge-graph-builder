@@ -174,3 +174,13 @@ Run in Google Colab with a GPU runtime, in order:
 1. `p3_step1_ner_data.py` — loads CoNLL-2003, builds aligned labels
 2. `p3_step2_train_ner.py` — fine-tunes the NER model (~10–15 min on GPU)
 3. `p3_step3_inference.py` — loads the trained model, tests entity extraction
+4. `p3_step4_relation_extraction.py` — extracts triples from the sample document
+5. `p3_step5_knowledge_graph.py` — builds and visualizes the graph
+6. `p3_step6_charts.py` — generates all charts
+
+Each step depends on variables from the previous ones, so run them in the same
+session without restarting.
+
+To use your own text: replace `SAMPLE_DOC` in step 4 with any document.
+
+## Tech Stack
